@@ -1,0 +1,226 @@
+html { font-size: 62.5%; } 
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Manrope", Arial, Helvetica, sans-serif;
+    width: auto;
+    background-color: rgb(204, 204, 204);
+}
+
+.comp {
+    max-width: 40em;
+    width: 90%;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.mainImg {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.drawer {
+    width: 100%;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 3em auto 0 auto;
+}
+
+.texts {
+    padding: 2em;
+}
+
+.texts h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: hsl(217, 19%, 35%);
+}
+
+.texts p {
+    font-size: 1.3rem;
+    margin-top: 1em;
+    font-weight: 500;
+    color: hsl(214, 17%, 51%);
+}
+
+.user {
+    width: 100%;
+    padding: 2em;
+}
+
+.userProfile {
+    display: none;
+    flex-direction: row;
+    margin: 5em 0 2em 0;
+}
+
+.avatar {
+    max-width: 4em;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+
+.userInfo h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+}
+
+.userInfo h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: hsl(212, 23%, 69%);
+}
+
+.shareButton {
+    margin: auto 0 auto auto;
+    max-width: 4em;
+    width: 100%;
+    min-height: 4em;
+    background-color: #ecf2f8;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shareButton:hover {
+    cursor: pointer;
+}
+
+.shareIcon:hover {
+    cursor: pointer;
+}
+
+.shareIcon {
+    max-width: 2em;
+    width: 80%;
+    height: auto;
+}
+
+
+.socmed {
+    margin-top: 3em;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.socmedII {
+    margin-top: 3em;
+    background-color: hsl(217, 19%, 35%);
+    display: flex;
+    width: 25em;
+    border-radius: 5px;
+    position: absolute;
+    top: 45%;
+    left: 68%;
+}
+
+@media only screen and (max-width: 1350px) {
+    .socmedII {
+        left: 72%;
+    }
+
+}
+
+.actualSocMed {
+    display: flex; 
+    flex-direction: row;
+    padding: 2em;
+    width: 100%;
+} 
+
+.forII {
+    justify-content: center;
+    align-items: center;
+}
+
+.shareTxt {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    color: hsl(212, 23%, 69%);
+    margin: auto 0;
+}
+
+.socmedLinks {
+    display: flex;
+    flex-direction: row;
+    margin: auto 0 auto 3em;
+    max-width: 10em;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.fb, .twt, .pin {
+    display: flex;
+    width: 3em;
+    justify-content: center;
+    align-items: center;
+}
+
+.showSection {
+    display: flex;
+}
+
+.hideSection {
+    display: none;
+}
+
+/* desktop and the sizing of the link shits */
+
+@media only screen and (min-width: 900px) {
+    .comp {
+        max-width: 90em;
+        width: 90%;
+        height: 100%;
+        margin: 10em auto;
+        display: flex;
+        flex-direction: row;
+        border-radius: 10px;
+        background-color: #fff;
+        overflow: hidden;
+    }
+
+    .mainImg {
+        max-width: 50em;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin-right: 3em;
+    }
+
+    .drawer {
+        display: block;
+        width: 100%;
+        min-height:44em;
+        object-fit: cover;
+    }
+
+    .information {
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    .texts h1 {
+        font-size: 2.5rem;
+    }
+
+    .texts p {
+        font-size: 1.6rem;
+    }
+}
